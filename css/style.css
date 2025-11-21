@@ -1,1 +1,83 @@
 /* Denna fil skall innehålla din CSS kod */
+body{
+height: 200vh;
+display: flex;
+justify-content: center;
+background-color: #b58b63;
+}
+
+.wrapper{
+width: 70%;
+display: grid;
+grid-template-areas:
+"hd hd hd"
+"s2 s3 s3"
+"s4 s5 s5"
+"s6 s7 s8";
+grid-template-columns: repeat(3 1fr);
+gap: 1.5%;
+}
+
+#hd{
+grid-area: hd;
+display: grid;
+grid-template-areas:
+"hd1"
+"hd2";
+grid-template-rows: 1fr 1fr;
+}
+
+#hd1{
+
+}
+
+#hd2{
+border: solid black;
+}
+
+#s2{
+border: solid black;
+grid-area: s2;
+}
+
+#s3{
+border: solid black;
+grid-area: s3;
+}
+
+#s4{
+border: solid black;
+grid-area: s4;
+}
+
+#s5{
+border: solid black;
+grid-area: s5;
+display: grid;
+grid-template-areas:
+"s51"
+"s52";
+}
+
+#s51{
+
+}
+
+#s52{
+
+}
+
+#s6{
+border: solid black;
+grid-area: s6;
+}
+
+#s7{
+border: solid black;
+grid-area: s7;
+}
+
+#s8{
+border: solid black;
+grid-area: s8;
+}
