@@ -1,5 +1,5 @@
 /* Denna fil skall innehålla din CSS kod */
-body{
+#body{
 height: 200vh;
 display: flex;
 justify-content: center;
@@ -33,25 +33,34 @@ grid-template-rows: 1fr 1fr;
 
 #hd2{
 border: solid black;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 20px 20px 20px 20px;
 }
 
 #s2{
 border: solid black;
 grid-area: s2;
+border-radius: 20px 20px 20px 20px;
 }
 
 #s3{
 border: solid black;
 grid-area: s3;
+border-radius: 20px 20px 20px 20px;
 }
 
 #s4{
 border: solid black;
 grid-area: s4;
+border-radius: 20px 20px 20px 20px;
+overflow: hidden;
+background-image: url("/img/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg");
+background-size: cover;
 }
 
 #s5{
-border: solid black;
 grid-area: s5;
 display: grid;
 grid-template-areas:
@@ -60,24 +69,163 @@ grid-template-areas:
 }
 
 #s51{
-
+border: solid black;
+margin-top: 0;
+border-radius: 20px 20px 20px 20px;
 }
 
 #s52{
-
+border: solid black;
+margin: 0;
+border-radius: 20px 20px 20px 20px;
 }
 
 #s6{
 border: solid black;
 grid-area: s6;
+border-radius: 20px 20px 20px 20px;
+color: white;
 }
 
 #s7{
 border: solid black;
 grid-area: s7;
+background-image: url("../img/mariah-hewines-JQfxJHQEX3c-unsplash.jpg");
+background-size: cover;
+border-radius: 20px 20px 20px 20px;
+color: white;
 }
 
 #s8{
 border: solid black;
 grid-area: s8;
+background-image: url("../img/nathan-dumlao-XOhI_kW_TaM-unsplash.jpg");
+background-size: cover;
+border-radius: 20px 20px 20px 20px;
+color: white;
+}
+
+/*
+Meny css under här
+*/
+
+#body_meny{
+height: 97vh;
+display: flex;
+justify-content: center;
+background-color: #b58b63;
+}
+
+#meny_wrapper{
+display: grid;
+grid-template-areas:
+". ."
+"bak dry"
+"bak dry"
+"bak dry"
+"mat cat"
+"mat cat"
+"mat cat"
+". .";
+grid-template-rows: repeat(8 1fr);
+grid-template-columns: 1fr 1fr;
+width: 100%;
+gap: 1.5%;
+}
+
+#bak{
+grid-area: bak;
+border: solid black;
+gap: 5%;
+grid-template-areas:
+"bak1 bak2 bak3";
+display: grid;
+}
+
+#bak1{
+border: solid black;
+grid-area: bak1;
+}
+
+#bak2{
+border: solid black;
+grid-area: bak2;
+}
+
+#bak3{
+border: solid black;
+grid-area: bak3;
+}
+
+#dry{
+grid-area: dry;
+border: solid black;
+gap: 5%;
+grid-template-areas:
+"dry1 dry2 dry3";
+display: grid;
+}
+
+#dry1{
+border: solid black;
+grid-area: dry1;
+}
+
+#dry2{
+border: solid black; 
+grid-area: dry2;
+}
+
+#dry3{
+border: solid black;  
+grid-area: dry3;
+}
+
+#mat{
+grid-area: mat;
+border: solid black;
+gap: 5%;
+grid-template-areas:
+"mat1 mat2 mat3";
+display: grid;
+}
+
+#mat1{
+border: solid black;
+grid-area: mat1;
+
+}
+
+#mat2{
+border: solid black;
+grid-area: mat2;
+}
+
+#mat3{
+border: solid black; 
+grid-area: mat3;
+}
+
+#cat{
+grid-area: cat;
+border: solid black;
+gap: 5%;
+grid-template-areas:
+"cat1 cat2 cat3";
+display: grid;
+}
+
+#cat1{
+border: solid black;
+grid-area: cat1;
+}
+
+#cat2{
+border: solid black;
+grid-area: cat2;
+}
+
+#cat3{
+border: solid black; 
+grid-area: cat3;
 }
