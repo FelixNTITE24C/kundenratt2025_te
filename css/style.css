@@ -20,22 +20,15 @@ gap: 1.5%;
 
 #hd{
 grid-area: hd;
-display: grid;
-grid-template-areas:
-"hd1"
-"hd2";
-grid-template-rows: 1fr 1fr;
-}
-
-#hd1{
-
-}
-
-#hd2{
-border: solid black;
 display: flex;
+justify-content: end;
 align-items: center;
-justify-content: center;
+border: solid black;
+flex-direction: column;
+background-image: url("/img/pngtree-sun-icon-logo-png-png-image_5687131.png");
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
 border-radius: 20px 20px 20px 20px;
 }
 
@@ -43,12 +36,17 @@ border-radius: 20px 20px 20px 20px;
 border: solid black;
 grid-area: s2;
 border-radius: 20px 20px 20px 20px;
+background-color: #f6efe8;
+color: #a5b58d;
 }
 
 #s3{
 border: solid black;
 grid-area: s3;
 border-radius: 20px 20px 20px 20px;
+background-image: url("/img/landingpage/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg");
+background-size: cover;
+color: #a5b58d;
 }
 
 #s4{
@@ -56,8 +54,9 @@ border: solid black;
 grid-area: s4;
 border-radius: 20px 20px 20px 20px;
 overflow: hidden;
-background-image: url("/img/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg");
+background-image: url("/img/landingpage/moritz-knoringer-5QR63diGK5o-unsplash.jpg");
 background-size: cover;
+color: #a5b58d;
 }
 
 #s5{
@@ -72,37 +71,43 @@ grid-template-areas:
 border: solid black;
 margin-top: 0;
 border-radius: 20px 20px 20px 20px;
+background-color: #f6efe8;
+color: #a5b58d;
 }
 
 #s52{
 border: solid black;
 margin: 0;
 border-radius: 20px 20px 20px 20px;
+background-color: #f6efe8;
+color: #a5b58d;
 }
 
 #s6{
 border: solid black;
 grid-area: s6;
 border-radius: 20px 20px 20px 20px;
-color: white;
+color: #a5b58d;
+background-image: url("/img/landingpage/hannah-fleming-hlll-fc8y5qpBKWQ-unsplash.jpg");
+background-size: cover;
 }
 
 #s7{
 border: solid black;
 grid-area: s7;
-background-image: url("../img/mariah-hewines-JQfxJHQEX3c-unsplash.jpg");
+background-image: url("/img/landingpage/mariah-hewines-JQfxJHQEX3c-unsplash.jpg");
 background-size: cover;
 border-radius: 20px 20px 20px 20px;
-color: white;
+color: #a5b58d;
 }
 
 #s8{
 border: solid black;
 grid-area: s8;
-background-image: url("../img/nathan-dumlao-XOhI_kW_TaM-unsplash.jpg");
+background-image: url("/img/landingpage/nathan-dumlao-XOhI_kW_TaM-unsplash.jpg");
 background-size: cover;
 border-radius: 20px 20px 20px 20px;
-color: white;
+color: #a5b58d;
 }
 
 /*
@@ -119,18 +124,28 @@ background-color: #b58b63;
 #meny_wrapper{
 display: grid;
 grid-template-areas:
-". ."
+"meny logo"
 "bak dry"
 "bak dry"
 "bak dry"
 "mat cat"
 "mat cat"
 "mat cat"
-". .";
+"footer footer";
 grid-template-rows: repeat(8 1fr);
 grid-template-columns: 1fr 1fr;
 width: 100%;
 gap: 1.5%;
+}
+
+#meny{
+border: solid black;
+grid-area: meny;
+}
+
+#logo{
+border: solid black;
+grid-area: logo;
 }
 
 #bak{
@@ -139,22 +154,26 @@ border: solid black;
 gap: 5%;
 grid-template-areas:
 "bak1 bak2 bak3";
-display: grid;
+display: flex;
+justify-content: space-evenly;
 }
 
 #bak1{
 border: solid black;
 grid-area: bak1;
+background-image: url("/img/meny/allen-rad-JBIK4QZOFfc-unsplash.jpg");
 }
 
 #bak2{
 border: solid black;
 grid-area: bak2;
+background-image: url("/img/meny/anthony-espinosa-6iqpLKqeaE0-unsplash.jpg");
 }
 
 #bak3{
 border: solid black;
 grid-area: bak3;
+background-image: url("/img/meny/oskar-yildiz-9B9-Wq1cZMI-unsplash.jpg");
 }
 
 #dry{
@@ -163,22 +182,26 @@ border: solid black;
 gap: 5%;
 grid-template-areas:
 "dry1 dry2 dry3";
-display: grid;
+display: flex;
+justify-content: space-evenly;
 }
 
 #dry1{
 border: solid black;
 grid-area: dry1;
+background-image: url("/img/meny/laura-chouette-TecD-1MTMiE-unsplash.jpg");
 }
 
 #dry2{
 border: solid black; 
 grid-area: dry2;
+background-image: url("/img/meny/mae-mu-kbch-i63YTg-unsplash.jpg");
 }
 
 #dry3{
 border: solid black;  
 grid-area: dry3;
+background-image: url("/img/meny/sara-julie-9Gz5bMWdGYE-unsplash.jpg");
 }
 
 #mat{
@@ -187,23 +210,26 @@ border: solid black;
 gap: 5%;
 grid-template-areas:
 "mat1 mat2 mat3";
-display: grid;
+display: flex;
+justify-content: space-evenly;
 }
 
 #mat1{
 border: solid black;
 grid-area: mat1;
-
+background-image: url("/img/meny/brooke-lark-oaz0raysASk-unsplash.jpg");
 }
 
 #mat2{
 border: solid black;
 grid-area: mat2;
+background-image: url("/img/meny/daniel-dan-jU2yc0xxMbU-unsplash.jpg");
 }
 
 #mat3{
 border: solid black; 
 grid-area: mat3;
+background-image: url("/img/meny/luisa-brimble-vIm26fn_QKg-unsplash.jpg");
 }
 
 #cat{
@@ -212,20 +238,29 @@ border: solid black;
 gap: 5%;
 grid-template-areas:
 "cat1 cat2 cat3";
-display: grid;
+display: flex;
+justify-content: space-evenly;
 }
 
 #cat1{
 border: solid black;
 grid-area: cat1;
+background-image: url("/img/meny/aneta-pawlik-GJwKzsxUQu4-unsplash.jpg");
 }
 
 #cat2{
 border: solid black;
 grid-area: cat2;
+background-image: url("/img/meny/smorgastarta-med-rakor-och-lax.jpg");
 }
 
 #cat3{
 border: solid black; 
 grid-area: cat3;
+background-image: url("/img/meny/yukiko-kanada-Ou4CQo6jzvU-unsplash.jpg");
+}
+
+#footer{
+border: solid black;
+grid-area: footer;
 }
