@@ -3,7 +3,8 @@
 height: 200vh;
 display: flex;
 justify-content: center;
-background-color: #b58b63;
+background-image: url(/img/keith-misner-h0Vxgz5tyXA-unsplash\ \(1\).jpg);
+background-size:contain;
 }
 
 .wrapper{
@@ -14,8 +15,10 @@ grid-template-areas:
 "s2 s3 s3"
 "s4 s5 s5"
 "s6 s7 s8";
-grid-template-columns: repeat(3 1fr);
+grid-template-columns: repeat(3, 1fr);
 gap: 1.5%;
+background-color: rgba(181, 139, 99, 0.7);
+border-radius: 20px 20px 20px 20px;
 }
 
 #hd{
@@ -118,149 +121,262 @@ Meny css under här
 height: 97vh;
 display: flex;
 justify-content: center;
-background-color: #b58b63;
+background-image: url(/img/keith-misner-h0Vxgz5tyXA-unsplash\ \(1\).jpg);
+background-size: cover;
 }
 
 #meny_wrapper{
 display: grid;
 grid-template-areas:
 "meny logo"
+"bak-t dry-t"
 "bak dry"
 "bak dry"
 "bak dry"
+"bak dry"
+"mat-t cat-t"
+"mat cat"
 "mat cat"
 "mat cat"
 "mat cat"
 "footer footer";
-grid-template-rows: repeat(8 1fr);
+grid-template-rows: repeat(12, 1fr);
 grid-template-columns: 1fr 1fr;
 width: 100%;
 gap: 1.5%;
+background-color: rgba(181, 139, 99, 0.7);
+border-radius: 20px 20px 20px 20px;
+}
+
+.highlighted-text {
+    position: relative;
+    display: inline-block;
+    font-size: inherit; /* Ensures the same font size as parent */
+    z-index: 1; /* Ensures text stays above the highlight */
+}
+
+.highlighted-text::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    height: 80%;
+    background-color: #844444; /* Highlight color */
+    transform: rotate(-1.5deg);
+    z-index: -1; /* Ensures background stays behind the text */
+    border-radius: 100px;
+}
+
+#bak-t{
+    grid-area: bak-t;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#dry-t{
+    grid-area: dry-t;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#mat-t{
+    grid-area: mat-t;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#cat-t{
+    grid-area: cat-t;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #meny{
-border: solid black;
 grid-area: meny;
+display: flex;
+justify-content: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #logo{
-border: solid black;
 grid-area: logo;
+display: flex;
+justify-content: center;
+flex-direction: row;
 }
 
 #bak{
 grid-area: bak;
-border: solid black;
 gap: 5%;
 grid-template-areas:
 "bak1 bak2 bak3";
 display: flex;
 justify-content: space-evenly;
+margin-right: 2.5%;
 }
 
 #bak1{
 border: solid black;
 grid-area: bak1;
 background-image: url("/img/meny/allen-rad-JBIK4QZOFfc-unsplash.jpg");
+background-size: cover;
+width: 30%;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #bak2{
 border: solid black;
 grid-area: bak2;
 background-image: url("/img/meny/anthony-espinosa-6iqpLKqeaE0-unsplash.jpg");
+background-size: cover;
+width: 30%;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #bak3{
 border: solid black;
 grid-area: bak3;
 background-image: url("/img/meny/oskar-yildiz-9B9-Wq1cZMI-unsplash.jpg");
+background-size: cover;
+width: 30%;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #dry{
 grid-area: dry;
-border: solid black;
 gap: 5%;
 grid-template-areas:
 "dry1 dry2 dry3";
 display: flex;
 justify-content: space-evenly;
+margin-left: 2.5%;
 }
 
 #dry1{
 border: solid black;
 grid-area: dry1;
 background-image: url("/img/meny/laura-chouette-TecD-1MTMiE-unsplash.jpg");
+background-size: cover;
+width: 30%;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #dry2{
 border: solid black; 
 grid-area: dry2;
 background-image: url("/img/meny/mae-mu-kbch-i63YTg-unsplash.jpg");
+background-size: cover;
+width: 30%;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #dry3{
 border: solid black;  
 grid-area: dry3;
 background-image: url("/img/meny/sara-julie-9Gz5bMWdGYE-unsplash.jpg");
+background-size: cover;
+width: 30%;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #mat{
 grid-area: mat;
-border: solid black;
 gap: 5%;
 grid-template-areas:
 "mat1 mat2 mat3";
 display: flex;
 justify-content: space-evenly;
+margin-right: 2.5%;
 }
 
 #mat1{
 border: solid black;
 grid-area: mat1;
 background-image: url("/img/meny/brooke-lark-oaz0raysASk-unsplash.jpg");
+background-size: cover;
+width: 30%;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #mat2{
 border: solid black;
 grid-area: mat2;
 background-image: url("/img/meny/daniel-dan-jU2yc0xxMbU-unsplash.jpg");
+background-size: cover;
+width: 30%;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #mat3{
 border: solid black; 
 grid-area: mat3;
 background-image: url("/img/meny/luisa-brimble-vIm26fn_QKg-unsplash.jpg");
+background-size: cover;
+width: 30%;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #cat{
 grid-area: cat;
-border: solid black;
 gap: 5%;
 grid-template-areas:
 "cat1 cat2 cat3";
 display: flex;
 justify-content: space-evenly;
+margin-left: 2.5%;
 }
 
 #cat1{
 border: solid black;
 grid-area: cat1;
 background-image: url("/img/meny/aneta-pawlik-GJwKzsxUQu4-unsplash.jpg");
+background-size: cover;
+width: 30%;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #cat2{
 border: solid black;
 grid-area: cat2;
 background-image: url("/img/meny/smorgastarta-med-rakor-och-lax.jpg");
+background-size: cover;
+width: 30%;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #cat3{
 border: solid black; 
 grid-area: cat3;
 background-image: url("/img/meny/yukiko-kanada-Ou4CQo6jzvU-unsplash.jpg");
+background-size: cover;
+width: 30%;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #footer{
 border: solid black;
 grid-area: footer;
+display: flex;
+justify-content: space-evenly;
 }
